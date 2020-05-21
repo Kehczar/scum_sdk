@@ -1,0 +1,100 @@
+// Scum 3.79.22573 (UE 4.24)
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+#include "../SDK.hpp"
+
+namespace Classes
+{
+//---------------------------------------------------------------------------
+//Functions
+//---------------------------------------------------------------------------
+
+// Function UI_ItemInventory2.UI_ItemInventory2_C.InitBlueprint
+// (Net, NetReliable, Exec, Native, Event, NetResponse, Static, Public, Private, Protected, NetServer, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TScriptInterface<class UInventoryNode>* Item                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData)
+
+void UUI_ItemInventory2_C::STATIC_InitBlueprint(TScriptInterface<class UInventoryNode>* Item)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ItemInventory2.UI_ItemInventory2_C.InitBlueprint");
+
+	UUI_ItemInventory2_C_InitBlueprint_Params params;
+	params.Item = Item;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UI_ItemInventory2.UI_ItemInventory2_C.Tick
+// (Net, NetRequest, Exec, NetResponse, Static, NetMulticast, NetServer, HasOutParms, HasDefaults, DLLImport, BlueprintEvent)
+// Parameters:
+// struct FGeometry*              MyGeometry                     (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData)
+// float*                         InDeltaTime                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+
+void UUI_ItemInventory2_C::STATIC_Tick(struct FGeometry* MyGeometry, float* InDeltaTime)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ItemInventory2.UI_ItemInventory2_C.Tick");
+
+	UUI_ItemInventory2_C_Tick_Params params;
+	params.MyGeometry = MyGeometry;
+	params.InDeltaTime = InDeltaTime;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UI_ItemInventory2.UI_ItemInventory2_C.Blink
+// (NetReliable, Exec, Native, Event, NetResponse, Static, Public, Private, Protected, NetServer, BlueprintEvent, BlueprintPure)
+
+void UUI_ItemInventory2_C::STATIC_Blink()
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ItemInventory2.UI_ItemInventory2_C.Blink");
+
+	UUI_ItemInventory2_C_Blink_Params params;
+
+	auto flags = fn->FunctionFlags;
+	fn->FunctionFlags |= 0x400;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+// Function UI_ItemInventory2.UI_ItemInventory2_C.ExecuteUbergraph_UI_ItemInventory2
+// (NetReliable, Static, NetMulticast, MulticastDelegate, Private, Delegate, NetServer, BlueprintEvent, BlueprintPure)
+// Parameters:
+// int*                           EntryPoint                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData)
+
+void UUI_ItemInventory2_C::STATIC_ExecuteUbergraph_UI_ItemInventory2(int* EntryPoint)
+{
+	static auto fn = UObject::FindObject<UFunction>("Function UI_ItemInventory2.UI_ItemInventory2_C.ExecuteUbergraph_UI_ItemInventory2");
+
+	UUI_ItemInventory2_C_ExecuteUbergraph_UI_ItemInventory2_Params params;
+	params.EntryPoint = EntryPoint;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+
+	fn->FunctionFlags = flags;
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
